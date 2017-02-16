@@ -33,7 +33,7 @@ const logger = bunyan.createLogger({
 
 When you creating `LogDnaStream` you can pass options to customize `message`.
 
-```
+```js
 // setup your stream
 const stream = new bunyanLogdna.LogDnaStream(client, {
     formatMessage: (message, record) {
@@ -50,7 +50,7 @@ logger.child({type: 'server'}).debug('server is running')
 Or customize `context` (additional log data shown in logdna after expand log message). By default all your
 extra data will be in context including `hostname` and `pid`.
 
-```
+```js
 // setup your stream
 const stream = new bunyanLogdna.LogDnaStream(client, {
     formatContext: (context, record) {

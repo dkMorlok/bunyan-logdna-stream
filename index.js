@@ -1,3 +1,3 @@
-const LogDnaStream = require('./lib/stream')
+const LogDnaStream = require('./lib/stream').LogDnaStream
 
-module.exports.LogDnaStream = LogDnaStream
+exports.LogDnaStream = LogDnaStream

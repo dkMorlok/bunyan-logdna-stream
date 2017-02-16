@@ -15,28 +15,28 @@ describe('LogDnaStream', () => {
 		logger.debug('test')
 		expect(client.log.callCount).to.equal(1)
 		expect(client.logMessage).to.equal('test')
-		expect(client.logOptions.level).to.equal('DEBUG')
+		expect(client.logOptions.level).to.equal('debug')
 	})
 
 	it('should log a message from logger#info(message)', () => {
 		logger.info('test')
 		expect(client.log.callCount).to.equal(1)
 		expect(client.logMessage).to.equal('test')
-		expect(client.logOptions.level).to.equal('INFO')
+		expect(client.logOptions.level).to.equal('info')
 	})
 
 	it('should log a message from logger#warn(message)', () => {
 		logger.warn('test')
 		expect(client.log.callCount).to.equal(1)
 		expect(client.logMessage).to.equal('test')
-		expect(client.logOptions.level).to.equal('WARN')
+		expect(client.logOptions.level).to.equal('warn')
 	})
 
 	it('should log a message from logger#error(message)', () => {
 		logger.error('test')
 		expect(client.log.callCount).to.equal(1)
 		expect(client.logMessage).to.equal('test')
-		expect(client.logOptions.level).to.equal('ERROR')
+		expect(client.logOptions.level).to.equal('error')
 	})
 
 	it('should log a message from logger#error(extra, message)', () => {
@@ -59,10 +59,9 @@ describe('LogDnaStream', () => {
 		expect(client.logOptions.context.type).to.equal('server')
 	})
 
-	it('should always append pid and hostname to context', () => {
+	it('should always append pid to context', () => {
 		logger.debug('test')
 		expect(client.logOptions.context).to.have.property('pid')
-		expect(client.logOptions.context).to.have.property('hostname')
 	})
 
 	it('should set app name by logger name', () => {

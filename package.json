@@ -1,0 +1,41 @@
+{
+  "name": "bunyan-logdna-stream",
+  "version": "1.0.0",
+  "description": "Write log to LogDNA by using Bunyan",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "nyc": "nyc --reporter=text --reporter=lcov npm test",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dkMorlok/bunyan-logdna-stream.git"
+  },
+  "keywords": [
+    "logdna",
+    "bunyan",
+    "stream"
+  ],
+  "author": "Dusan Kmet <morlokdk@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/dkMorlok/bunyan-logdna-stream",
+  "engines": {
+    "node": ">=4.2.2",
+    "npm": ">=2.14.7"
+  },
+  "devDependencies": {
+    "bunyan": "^1.8.5",
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.16",
+    "mocha": "^3.2.0",
+    "nyc": "^10.1.2",
+    "sinon": "^1.17.7"
+  },
+  "nyc": {
+    "tempDirectory": "./node_modules/.nyc_temp",
+    "exclude": [
+      "test/**/*.js"
+    ]
+  }
+}

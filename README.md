@@ -1,5 +1,6 @@
 # bunyan-logdna-stream
 
+[![Build Status](https://travis-ci.org/dkMorlok/bunyan-logdna-stream.svg?branch=master)](https://travis-ci.org/dkMorlok/bunyan-logdna-stream)
 [![Coverage Status](https://coveralls.io/repos/github/dkMorlok/bunyan-logdna-stream/badge.svg?branch=master)](https://coveralls.io/github/dkMorlok/bunyan-logdna-stream?branch=master)
 
 Write log to LogDNA by using Bunyan with optional context and message formatting.

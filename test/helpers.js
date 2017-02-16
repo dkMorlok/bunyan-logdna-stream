@@ -1,3 +1,5 @@
+"use strict";
+
 const sinon = require('sinon')
 const bunyan = require('bunyan')
 const LogDnaStream = require('../index').LogDnaStream

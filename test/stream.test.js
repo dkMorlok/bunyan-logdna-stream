@@ -1,3 +1,5 @@
+"use strict";
+
 const expect = require('chai').expect
 const should = require('chai').should()
 const helpers = require('./helpers')

@@ -21,7 +21,7 @@
   "license": "MIT",
   "homepage": "https://github.com/dkMorlok/bunyan-logdna-stream",
   "engines": {
-    "node": ">=6.0.0"
+    "node": ">=4.0.0"
   },
   "devDependencies": {
     "bunyan": "^1.8.5",

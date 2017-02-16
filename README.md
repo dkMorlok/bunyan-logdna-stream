@@ -19,6 +19,7 @@ const bunyanLogdna = require('bunyan-logdna-stream')
 
 // create logdna client
 const client = logdna.createLogger(KEY, OPTIONS)
+const stream = new bunyanLogdna.LogDnaStream(client)
 
 // create bunyan logger
 const logger = bunyan.createLogger({
@@ -26,7 +27,7 @@ const logger = bunyan.createLogger({
   streams: [{
     level: 'debug',
     type: 'raw',
-    stream: new bunyanLogdna.LogDnaStream(client)
+    stream: stream
   }]
 })
 ```

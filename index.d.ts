@@ -1,11 +1,11 @@
 export class LogDnaStream {
 
-	constructor(logger: ILogger, options: LogDnaStreamOptions)
+	constructor(logger: ILogger, options?: LogDnaStreamOptions)
 
 }
 
 export interface ILogger {
-	log: (msg: string, options: any) => any
+	log: (msg: string, options?: any) => any
 }
 
 export interface LogDnaStreamOptions {

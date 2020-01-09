@@ -2,7 +2,8 @@
   "name": "bunyan-logdna-stream",
   "version": "1.0.0",
   "description": "Write log to LogDNA by using Bunyan",
-  "main": "index.js",
+  "main": "./index.js",
+  "typings": "./index.d.ts",
   "scripts": {
     "test": "mocha",
     "nyc": "nyc --reporter=text --reporter=lcov npm test",
